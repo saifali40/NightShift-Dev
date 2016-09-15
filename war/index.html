@@ -1,0 +1,17 @@
+ <!DOCTYPE>
+ <html>
+	 <head>
+	 	<title>Form Validation using JS</title>
+	 </head>
+	 <script type="text/javascript" src="index.js"></script>
+	 <body>
+	 	<form name="myForm" action="/Registration" onsubmit="return validateForm()" method="post">
+			Name: <input type="text" name="name" id="name"><p id="demo1"></p>
+			Email: <input type="text" name="email" id="email"><p id="demo2"></p>
+			Phone: <input type="text" name="phone" id="phone" pattern='^[789]\d{9}$'><p id="demo3"></p>
+			password: <input type="password" name="password1" id="pass1"><p id="demo4"></p>
+			Retype Password: <input type="password" name="password2" id="pass2"><p id="demo5"></p>
+			<input type="submit" value="Submit">
+		</form>
+	 </body>
+</html>
